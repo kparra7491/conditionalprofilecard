@@ -54,14 +54,14 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://picsum.photos/200",
+    background: "null",
     // this is the url for the profile avatar
-    avatarURL: "https://thispersondoesnotexist.com/image",
+    avatarURL: "null",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: "alesanchezr",
+    github: null,
     linkedin: null,
     instagram: null,
     name: null,
