@@ -34,13 +34,13 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${variables.name}</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>
+          <h2>${variables.role}</h2>
+          <h3>${variables.city}, ${variables.country}</h3>
+          <ul class="${variables.socialMediaPosition}">
+            <li><a href="https://twitter.com/${variables.twitter}"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${variables.github}"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/${variables.linkedin}"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${variables.instagram}"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -54,9 +54,9 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background: "https://picsum.photos/200",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL: "https://thispersondoesnotexist.com/image",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
